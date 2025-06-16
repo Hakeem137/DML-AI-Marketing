@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+      <title>DOML AI Marketing</title>
+    <style>
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'segment UI', Tahoma, Geneva, Verdant, sans-serif;
+}
+      
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 80px 40px 40px;
+    flex-wrap: wrap;
+  }
+   .hero-content {
+max-width: 600px;
+   }
+   .hero h1 {
+     font-size: 48px;
+     line-height: 1.2;
+ margin-bottom: 20px;
+   }
+.gradient-text {
+  background: linear-gradient(to right, #b832f0, #00c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+     .hero p {
+       color: #ccc;
+       font-size: 16px;
+      margin-bottom: 20px;
+     }
+
+      .line {
+        height: 2px;
+        width: 200px;
+        background: linear-gradient(to right, #b832f0, #00c3ff);
+        margin-bottom: 20px;
+      }
+
+      .hero-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #444;
+     border-radius: 20px;
+     text-decoration:none;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+      .hero-btn:hover {
+      background-color: #111;
+      }
+     @keyframes float {
+       0%, 100% { transform: translateY(0); }
+       50% { transform: translateY(-10); }
+     }
+     @media (max-width: 768px) {
+     .hero {
+       flex-direction:column;
+       text-align: center;
+     }
+     .hero-image{
+     margin-top: 30px;
+     }
+     }
+      .navbar { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #000;
+      border-bottom: 1px solid #111;
+        flex-wrap: wrap;
+      }
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+      .nav-links a {
+        margin: 0 10px;
+        color: #bbb;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+      }
+
+     .nav-left {
+       display: flex;
+    align-items: center;
+     }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    margin-top: 10px;
+      }
+
+      .nav-right input {
+        padding: 6px 12px;
+        background-color: #111;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: white;
+      }
+
+      .signin,
+      .signup {
+        background-color: transparent;
+        border: 1px solid #444;
+        color: white;
+        padding: 6px 14px;
+        cursor: pointer;
+      }
+
+      .signup {
+        background: linear-gradient(to right, #b832f0, #00c3ff);
+        color: black;
+       font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          flex-wrap: wrap;
+        }
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+   .nav-right {
+     width: 100%;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+   }
+      }
+      .brands {
+        text-align: center;
+     margin-top: 60px;
+        padding: 20px;
+      }
+      .brands img {
+        max-width: 90%;
+        height: auto;
+      }
+    .section-two{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 80px 40px;
+    flex-wrap: wrap;
+      background-color: #000;
+    }
+    .section-two .hero content {
+      max-width: 600px;
+    }
+    
+    .section-two .hero-image img {
+      max-width: 400px;
+      width: 100%;
+    }
+    
+        .section-reverse {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 80px 40px;
+    flex-wrap: wrap;
+      background-color: #000;
+    }
+      .section-reverse .hero content {
+      max-width: 600px;
+    }
+    
+    .section-reverse .hero-image img {
+      max-width: 400px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      .section-reverse {
+        flex-direction: column;
+        text-align: center;
+      }
+       .section-reverse .hero-image {
+      margin-bottom: 30px;
+    }
+       .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      border-radius: 20px;
+      background: linear-gradient(to right, #b832f0, #00c3ff);
+      color: white;
+      margin: 40px;
+    }
+
+    .testimonial-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-content {
+      max-width: 600px;
+    }
+
+    .testimonial-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .person-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .person-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .person-info span {
+      font-size: 14px;
+      color: #eee;
+    }
+
+    .person-info .badge {
+      width: 20px;
+      height: 20px;
+    }
+      
+       .section-cube{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 80px 40px;
+    flex-wrap: wrap;
+      background-color: #000;
+    }
+    .section-cube .hero content {
+      max-width: 600px;
+    }
+    
+    .section-cube .hero-image img {
+      max-width: 400px;
+      width: 100%;
+    }
+      
+       .section-reverse-donate {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 80px 40px;
+    flex-wrap: wrap;
+      background-color: #000;
+    }
+      .section-reverse-donate .hero content {
+      max-width: 600px;
+    }
+    
+    .section-reverse-donate .hero-image img {
+      max-width: 400px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      .section-reverse-donate {
+        flex-direction: column;
+        text-align: center;
+      }
+       .section-reverse-donate .hero-image {
+      margin-bottom: 30px;
+    }
+      
+             .testimonial2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      border-radius: 20px;
+      background: linear-gradient(to right, #b832f0, #00c3ff);
+      color: white;
+      margin: 40px;
+    }
+
+    .testimonial2-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .testimonial2-content {
+      max-width: 600px;
+    }
+
+    .testimonial2-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .person-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .person-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .person-info span {
+      font-size: 14px;
+      color: #eee;
+    }
+
+    .person-info .badge {
+      width: 20px;
+      height: 20px;
+    }
+      
+      
+    .email-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 40px;
+      flex-wrap: wrap;
+      background-color: #000;
+    }
+
+    .email-image {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .email-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .email-content {
+      flex: 1;
+      padding-left: 40px;
+      max-width: 600px;
+    }
+
+    .email-content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #b832f0, #00c3ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subscribe-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .subscribe-form input {
+      padding: 12px 16px;
+      border-radius: 30px;
+      border: none;
+      min-width: 250px;
+      font-size: 14px;
+    }
+
+    .subscribe-form button {
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .subscribe-form button:hover {
+      background-color: #111;
+    }
+
+    @media (max-width: 768px) {
+      .email-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .email-content {
+        padding-left: 0;
+        margin-top: 30px;
+      }
+    }
+     </style>
+  </head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo"> DOML</div>
+      <nav class="nav-links">
+        <a href="#">Product</a>
+        <a href="#">Team</a>
+        <a href="#">Explore</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Pricing</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search DOML..." />
+      <button class="signin">Sign in</button>
+      <button class="signup">Sign up</button>
+    </div>
+  </header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      <span class="gradient-text">AI Marketing.</span><br/>
+      optimized Reach.
+    </h1>
+    <p>
+      our vision is to revolutionize the way brands and advertisers target, reach
+    </p>
+    <div class="line"></div>
+    <a href="#" class="hero-btn">Get Started </a>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/whJQN1GX/image-3.png.png" alt="Globe" />
+  </div>
+</section>
+  <section class="brands">
+    <img src="https://i.postimg.cc/HkwKpD5b/Group-28.png" alt="Logos of brands" />
+  </section>
+  
+  <section class="section-two">
+  <div class="hero-content">
+    <h1>
+      <span class="gradient-text">AI Marketing.</span><br/>
+      optimized Reach.
+    </h1>
+    <p>
+      our vision is to revolutionize the way brands and advertisers target, reach
+    </p>
+    <div class="line"></div>
+    <a href="#" class="hero-btn">Get Started </a>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/whJQN1GX/image-3.png.png" alt="3D Cube" />
+  </div>
+</section>
+  
+   <section class="section-reverse">
+     <div class="hero-image">
+    <img src="https://i.ibb.co/whJQN1GX/image-3.png.png" alt="3D Object Left" />
+  </div>
+  <div class="hero-content">
+    <h1>
+      <span class="gradient-text">AI Marketing.</span><br/>
+      optimized Reach.
+    </h1>
+    <p>
+      our vision is to revolutionize the way brands and advertisers target, reach
+    </p>
+    <div class="line"></div>
+    <a href="#" class="hero-btn">Get Started </a>
+  </div>
+</section>
+    <section class="testimonial">
+    <div class="testimonial-image">
+      <img src="amaka.png" alt="Amaka Michael" />
+    </div>
+    <div class="testimonial-content">
+      <p>
+        It's all about getting your message in front of the right audience and creating those valuable relationships. Learn more about how DOML can help you do just that – all with a simple, easy-to-use platform.
+      </p>
+      <div class="person-info">
+        <h3>Amaka Michael</h3>
+        <span>Media Executive, Buying & Control</span>
+        <img class="badge" src="badge.png" alt="Verified Badge" />
+      </div>
+    </div>
+  </section>
+  
+   <section class="section-cube">
+  <div class="hero-content">
+    <h1>
+      <span class="gradient-text">AI Marketing.</span><br/>
+      optimized Reach.
+    </h1>
+    <p>
+      our vision is to revolutionize the way brands and advertisers target, reach
+    </p>
+    <div class="line"></div>
+    <a href="#" class="hero-btn">Get Started </a>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/whJQN1GX/image-3.png.png" alt="Cube" />
+  </div>
+</section>
+   <section class="section-reverse-donate">
+     <div class="hero-image">
+    <img src="https://i.ibb.co/whJQN1GX/image-3.png.png" alt="3D Object Left" />
+  </div>
+  <div class="hero-content">
+    <h1>
+      <span class="gradient-text">AI Marketing.</span><br/>
+      optimized Reach.
+    </h1>
+    <p>
+      our vision is to revolutionize the way brands and advertisers target, reach
+    </p>
+    <div class="line"></div>
+    <a href="#" class="hero-btn">Get Started </a>
+  </div>
+</section>
+  
+   <section class="email-section">
+    <div class="email-image">
+      <img src="7.png" alt="Decorative shape" />
+    </div>
+    <div class="email-content">
+      <h2>Get exponential reach<br/>via <span class="gradient-text">AI Marketing</span></h2>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your work email" />
+        <button>Get in touch →</button>
+      </div>
+    </div>
+  </section>
+
+  
+   <section class="brands">
+    <img src="https://i.postimg.cc/HkwKpD5b/Group-28.png" alt="Logos of brands" />
+  </section>
+</body>
+</html>
